@@ -13,10 +13,10 @@ func sayhello(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	fmt.Println("hello world")
-	// http.HandleFunc("/hello", sayhello)
-	// err := http.ListenAndServe(":9090", nil)
-	// if err != nil {
-	// 	fmt.Printf("http serve failed,err:%v\n", err)
-	// 	return
-	// }
+	http.HandleFunc("/hello", sayhello)
+	err := http.ListenAndServe(":9090", nil)
+	if err != nil {
+		fmt.Printf("http serve failed,err:%v\n", err)
+		return
+	}
 }
