@@ -3,8 +3,8 @@ package main
 import (
 	"net/http"
 
+	"github.com/Eronwin/gin-vue/controller"
 	"github.com/gin-gonic/gin"
-	"github.com/gin-vue/controller"
 )
 
 func main() {

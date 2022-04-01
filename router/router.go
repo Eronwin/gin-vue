@@ -1,7 +1,7 @@
 package router
 
 import (
-	"gin-vue/controller"
+	"github.com/Eronwin/gin-vue/controller"
 	"github.com/gin-gonic/gin"
 )
 
