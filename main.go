@@ -13,5 +13,6 @@ func main() {
 		c.String(http.StatusOK, "hello world")
 	})
 	r.GET("/ping", controller.Ping)
+	r.GET("/api/user/register", controller.Register)
 	r.Run(":9090") // 这边我们使用9999 这个端口
 }
