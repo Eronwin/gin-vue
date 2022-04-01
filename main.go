@@ -1,18 +1,10 @@
 package main
 
 import (
-	"net/http"
-
-	"github.com/Eronwin/gin-vue/controller"
-	"github.com/gin-gonic/gin"
+	"github.com/Eronwin/gin-vue/router"
 )
 
 func main() {
-	r := gin.Default()
-	r.GET("/", func(c *gin.Context) {
-		c.String(http.StatusOK, "hello world")
-	})
-	r.GET("/ping", controller.Ping)
-	r.GET("/api/user/register", controller.Register)
-	r.Run(":9090") // 这边我们使用9999 这个端口
+
+	router.Run()
 }
