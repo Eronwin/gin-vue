@@ -1,7 +1,8 @@
+server:
+  port: ":8080"
 db:
-  hostname: localhost
+  hostname: "localhost"
   port: 3306
   username: root
   password: canku555
   dbname: gin_vue
-addr: ":8080"

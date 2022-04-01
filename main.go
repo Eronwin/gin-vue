@@ -1,10 +1,14 @@
 package main
 
 import (
-	"github.com/Eronwin/gin-vue/router"
+	"os"
+
+	"github.com/Eronwin/gin-vue/cmd"
 )
 
 func main() {
-
-	router.Run()
+	if err := cmd.Execute(); err != nil {
+		println("start fail: ", err.Error())
+		os.Exit(-1)
+	}
 }

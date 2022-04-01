@@ -1,7 +1,5 @@
-
-   
 # 配置
-service_name = gin-vue
+service_name = shuwen-checklist
 config_path = config/dev.yaml
 tag = dev
 
