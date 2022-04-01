@@ -1,7 +1,6 @@
 package models
 
-type User struct{
+type User struct {
 	name string
 	role int
 }
-var db 
