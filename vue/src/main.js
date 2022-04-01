@@ -12,6 +12,8 @@ import store from './store';
 // scss style
 import './assets/scss/index.scss';
 
+import './plugins/element.js';
+
 Vue.config.productionTip = false;
 
 // Install BootstrapVue
