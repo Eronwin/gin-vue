@@ -1,22 +1,17 @@
 package main
 
 import (
-	"fmt"
-	"io/ioutil"
 	"net/http"
+
+	"github.com/gin-gonic/gin"
+	"github.com/gin-vue/controller"
 )
 
-func sayhello(w http.ResponseWriter, r *http.Request) {
-	b, _ := ioutil.ReadFile("./asset/text/hello.txt")
-	_, _ = fmt.Fprintln(w, string((b)))
-}
-
 func main() {
-	fmt.Println("hello world")
-	http.HandleFunc("/hello", sayhello)
-	err := http.ListenAndServe(":9090", nil)
-	if err != nil {
-		fmt.Printf("http serve failed,err:%v\n", err)
-		return
-	}
+	r := gin.Default()
+	r.GET("/", func(c *gin.Context) {
+		c.String(http.StatusOK, "hello world")
+	})
+	r.GET("/ping", controller.Ping)
+	r.Run(":9090") // 这边我们使用9999 这个端口
 }
