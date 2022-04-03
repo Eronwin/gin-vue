@@ -1,7 +1,7 @@
 # gin-vue
 
-##  $\delta \ 1$ goproject
-###  $\delta \ 1.1$  Package Install
+##  goproject
+###  Package Install
 
 
     go get -u github.com/gin-gonic/gin           #gin框架
@@ -10,7 +10,7 @@
     go get -u github.com/dgrijalva/jwt-go        #jwt鉴权
     go get -u golang.org/x/crypto/bcrypt         #bcrypt提供解析token
 
-###  $\delta \ 1.2$  Project Framework
+###   Project Framework
 
     ├── common
     │   ├── database.go                          #数据库连接
