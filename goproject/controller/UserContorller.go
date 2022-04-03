@@ -90,6 +90,7 @@ func Login(ctx *gin.Context) {
 	response.Success(ctx, gin.H{"token": token}, "登录成功")
 }
 
+//用户信息
 func Info(ctx *gin.Context) {
 	user, _ := ctx.Get("user")
 	response.Success(ctx, gin.H{"user": dto.ToUserDTO(user.(model.User))}, "获取用户信息成功")
