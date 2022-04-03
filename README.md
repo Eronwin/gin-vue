@@ -9,6 +9,7 @@
     go get -u github.com/go-sql-driver/mysql     #mysql驱动
     go get -u github.com/dgrijalva/jwt-go        #jwt鉴权
     go get -u golang.org/x/crypto/bcrypt         #bcrypt提供解析token
+    go get -u github.com/spf13/viper             #提供config支持
 
 ###   Project Framework
 
